@@ -1,0 +1,34 @@
+ALGORITHM date
+VAR
+    x:=INTEGER;
+    chm:=string;
+    d,m,y:=INTEGER;
+BEGIN
+    d:=x div 10000 ;
+    m:= x mod 10000 div 100 ;
+    y:= x mod 100 ;
+    if ( d > 31 or m > 12) then
+        write (" date invalide") ;
+        end if ;
+        SWITCH (m ) DO
+            case  1 : chm:="janvier"
+            case  2 : chm:="fevrier"
+            case  3 : chm:="mars"
+            case  4 : chm:="avril"
+            case  5 : chm:="mai"
+            case  6 : chm:="juin"
+            case  7 : chm:="juillet"
+            case  8 : chm:="aout"
+            case  9 : chm:="septembre"
+            case  10 : chm:="october"
+            case  11 : chm:="novembre"
+            case  12 : chm:="decembre"
+            
+        END_SWITCH
+        y := 2000+y;
+        if(y mod 4 =0 and m=02) then 
+
+
+
+
+END
